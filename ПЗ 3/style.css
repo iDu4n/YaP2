@@ -1,0 +1,801 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DDD;
+    width: 1440px;
+    margin: 0 auto;
+    /* max-width: 1440px; */
+}
+
+header {
+   max-width: 100%;
+   background-color: #464547;
+   height: 70px;
+   width: 1440px;
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   width: 1440px;
+   padding: 15px 0;
+}
+
+.header-nav {
+    max-width: 1240px;
+    margin: 0 auto;
+    text-align: right;
+    height: 40px;
+}
+
+.header-nav a {
+    display: inline;
+    text-decoration: none;
+    font: normal 13px Open-sans, sans-serif;
+    line-height: 40px;
+    color: #FFFDFD;
+    padding: 12px 20px;
+}
+
+.header-nav a:hover {
+    background-color: #2A1D17;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.gallery {
+    width: 1440px;
+    height: 600px;
+    background-image: url(images/Rectangle.jpg);
+}
+
+.gallery__inner {
+    padding-top: 162px;
+    padding-left: 210px;
+}
+
+.gallery__inner h1 {
+    /* top: 252px; */
+    /* left: 210px; */
+    width: 900px;
+    font: bold 96px Open-sans, sans-serif;
+    line-height: 85px;
+    color: #FFFEFE;
+    margin-bottom: 32px;
+    /* position: relative; */
+}
+
+.gallery__inner p {
+    /* top: 282px; */
+    /* left: 210px; */
+    font: bold 30px Open-sans, sans-serif;
+    color: #FFF;
+    /* position: relative; */
+}
+
+.circles {
+    display: none;
+}
+
+.entrance-door .info, .balkony-door .info, .room-door .info {
+    top: 55px;
+    left: 110px;
+    width: 300px;
+    position: relative;
+    float: left;
+}
+
+.room-door .info {
+    left: -168px;
+    width: 328px;
+    float: right;
+}
+
+
+.balkony-door .info {
+    width: 355px;
+}
+
+.entrance-door h1, .balkony-door h1, .room-door h1 {
+    font: bold 36px Open-sans, sans-serif;
+    color: #FFF;
+    padding-bottom: 5px;
+}
+
+.entrance-door h3, .balkony-door h2, .room-door h2 {
+    font: bold 36px Open-sans, sans-serif;
+    color: #FFF;
+    padding-bottom: 5px;
+}
+
+.entrance-door p, .balkony-door p, .room-door p {
+    font: normal 14px Open-sans, sans-serif;
+    line-height: 21px;
+}
+
+.entrance-door .circle, .entrance-door .circle2, .balkony-door .circle, .balkony-door .circle2, .room-door .circle, .room-door .circle2 {
+    position: relative;
+    top: 368px;
+    left: -200px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    float: left;
+    width: 102px;
+    height: 102px;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.room-door .circle, .room-door .circle2 {
+    left: 215px;
+    float: right;
+    margin-right: 0;
+    margin-left: 40px;
+}
+
+.balkony-door .circle, .balkony-door .circle2 {
+    left: -255px;
+}
+
+.entrance-door .circle p, .balkony-door .circle p, .room-door .circle p {
+    margin-top: 29px;
+    color: #FFFBFB;
+}
+
+.entrance-door .circle2 p, .balkony-door .circle2 p, .room-door .circle2 p {
+    margin-top: 39px;
+    color: #FFFBFB;
+}
+
+.entrance-door, .balkony-door, .room-door {
+    width: 1240px;
+    height: 500px;
+    margin: 100px auto;
+    background-color: #DEAE83;
+}
+
+.entrance-door img, .balkony-door img {
+    position: relative;
+    top: -30px;
+    left: 14px;
+}
+
+.balkony-door img {
+    top: -135px;
+    left: 385px;
+}
+
+.room-door img {
+    position: relative;
+    top: -135px;
+}
+
+.feedbacks, .form-section {
+    background-color: #FEFEFF;
+    width: 1240px;
+    height: 580px;
+    margin: 100px auto;
+}
+
+.feedbacks .container {
+    text-align: center;
+}
+
+.feedbacks .comment {
+    overflow-x:hidden;
+    max-width: 189px;
+    display: inline-block;
+    margin: 0 25px;
+}
+
+
+.feedbacks h1 {
+    font: bold 36px Open-sans, sans-serif;
+    padding: 50px 0 30px;
+    text-align: center;
+}
+
+.feedbacks h3 {
+    font: bold 36px Open-sans, sans-serif;
+    padding: 50px 0 30px;
+    text-align: center;
+}
+
+.feedbacks h2 {
+    font: bold 16px Open-sans, sans-serif;
+    margin: 5px 0 15px;
+}
+
+.feedbacks p {
+    font: normal 14px Open-sans, sans-serif;
+    line-height: 21px;
+    text-align: left;
+    padding: 25px 0 25px;
+    height: 270px;
+    border-top: 1px solid rgba(153, 152, 152, 0.4);
+    border-bottom: 1px solid rgba(153, 152, 152, 0.4);
+}
+
+
+
+.avatar {
+    border: 1px solid #56700F;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 102px;
+    height: 102px;
+    margin: 0 auto;
+
+}
+
+.avatar img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+
+}
+
+.map {
+    width: 620px;
+    height: 580px;
+    margin-right: 10px;
+}
+.map_768,
+.map_375 {
+    display: none;
+}
+.form-section {
+    position: relative;
+}
+.form-section img {
+    float: left;
+}
+
+.form-section form {
+    margin-top: 55px;
+    float: right;
+    width: 500px;
+
+}
+
+.form-section input {
+    border: 1px solid #CBCACA;
+    border-radius: 2px;
+    width: 342px;
+    height: 35px;
+    margin: 10px 0;
+}
+
+form h1 {
+    font: bold 36px Open-sans, sans-serif;
+    margin-bottom: 16px;
+}
+
+form label {
+    font: bold 16px Open-sans, sans-serif;
+    margin-bottom: 16px;
+}
+
+form h2 {
+    font: bold 14px Open-sans, sans-serif;
+    padding-right: 9px;
+}
+
+form p {
+    font: normal 11px Open-sans, sans-serif;
+    margin-bottom: 15px;
+}
+
+.form-section .phone-number h2, .form-section .phone-number input {
+    display: inline-block;
+}
+
+.form-section ::-webkit-input-placeholder {
+    padding-left: 5px;
+}
+
+.form-section .phone-number ::-webkit-input-placeholder {
+    padding-left: 0;
+    text-align: center;
+}
+
+.form-section input[type="submit"] {
+    width: 199px;
+    height: 40px;
+    background-color:#2A1D17;
+    color: #FFFEFE;
+}
+
+.footer {
+    height: 260px;
+}
+
+footer {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 260px;
+    background-color: #464547;
+}
+
+footer .container {
+    padding-top: 45px;
+    width: 1240px;
+    margin: 0 auto;
+}
+
+footer .text, footer .links {
+    display: inline-block;
+    max-width: 176px;
+    margin-right: 80px;
+}
+
+footer .links {
+    margin-right: 53px;
+}
+
+footer .partners {
+    display: inline-block;
+
+}
+
+footer .links p, footer .text p {
+    padding-bottom: 20px;
+    font: normal 14px Open-sans, sans-serif;
+    color: #FFFEFE;
+}
+
+footer .links p {
+    padding-bottom: 5px;
+}
+
+footer .links a:hover {
+    opacity: 40%;
+}
+
+footer .partners h1 {
+    font: normal 14px Open-sans, sans-serif;
+    color: #FFFBFB;
+}
+
+footer .partners h2 {
+    font: normal 14px Open-sans, sans-serif;
+    color: #FFFBFB;
+}
+
+footer .partners img {
+    margin: 12px 15px 0 0;
+} 
+
+.big-img {
+    display: inline-block;
+    margin-top: 28px;
+}
+
+@media screen and (max-width: 768px){
+
+    body {
+        margin: 0;
+        width: 768px;
+    }
+    html,body{overflow-x:hidden;}
+   
+
+    .gallery {
+        width: 768px;
+        height: 468px;
+        background-image: url(images/Rectangle_768.jpg);
+    }
+
+    .gallery__inner {
+        width: 400px;
+        padding-left: 112px;
+    }
+
+    .gallery__inner h1{
+        left: 60px;
+        font-weight: 700;
+        font-size: 47px;
+        line-height: 51px;        
+    }
+    .gallery__inner p{
+        left: 60px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;       
+    }
+
+    .circle, .circle2 {
+        display: none;
+    }
+    .entrance-door,
+    .room-door,
+    .balkony-door {
+        width: 768px;
+        height: 381px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .entrance-door img {
+        width: 330px;
+        height: 323px;
+        top: 30px;
+        left: 120px;
+    }
+    .room-door img {
+        width: 330px;
+        height: 323px;
+        top: 30px;
+        left: 55px;
+    }
+
+    .balkony-door img {
+        width: 330px;
+        height: 323px;
+        top: 30px;
+        left: 120px;
+    }
+
+    .circles {
+        display: inline-block;
+        margin: 20px 0px 20px 0px;
+        width: 768px;
+        height: 160px;
+        background: #DEAE83;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    
+    .circles__inner {
+        display: flex;
+        width: 386px;
+        justify-content: space-between;
+    }
+
+    .circles__item {
+        width: 102px;
+        height: 102px;
+        font: normal 14px Open-sans, sans-serif;
+        font-weight: 700;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFBFB;
+        border-radius: 50%;
+        border: 2px solid #FDFEFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .entrance-door .info,
+    .balkony-door .info,
+    .room-door .info {
+        top: 25px;
+        left: 55px;
+        width: 300px;
+        position: relative;
+        float: left;
+    }
+    .entrance-door h1,
+    .balkony-door h1,
+    .room-door h1 {
+        font-size: 21px;
+    }
+
+    .room-door .info {
+        left: -25px;
+        float: right;
+    }
+
+    .feedbacks {
+        width: 768px;
+        height: 974px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .feedbacks h1 {
+        padding-top: 29px;
+        padding-bottom: 15px;
+    }
+
+    .container {
+        width: 580px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .feedbacks .comment {
+        display:flex;
+        height: 20px;
+        
+    }
+
+
+
+    .form-section {
+        width: 768px;
+        height: 988px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+    }
+
+    .form-section form {
+        margin-top: 20px;
+        width: 768px;
+        height: 526px;
+        background: #FEFEFF;
+        margin-bottom: 300px;
+    }
+
+    .form {
+        width: 342px;
+        height: 526px;
+        padding-top: 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .map_768 {
+        display: block;
+    }
+ 
+    footer {
+        width: 768px;
+        margin-top: 20px;
+        font-size: 10px; 
+    }
+
+    footer .text {
+        margin-right: 30px;
+        margin-left: 10px;
+        
+    }
+
+    .partners .partners-block img {
+        width: 79.58px;
+        height: 50px;
+    } 
+
+
+    footer .links p, footer .text p { 
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 376px){
+    body {
+
+        width: 375px;
+    }
+
+    .gallery,
+    .circles {
+        display: none;
+    }
+    header {
+        width: 375px;
+        height: 196px;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+
+    .header-nav {
+        padding: 20px 0;
+        height: 196px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .header-nav a {
+        padding: 5px 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 15px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .entrance-door,
+    .room-door,
+    .balkony-door {
+        width: 375px;
+        margin-top: 0;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .entrance-door {
+        height: 584px;
+    }
+    .room-door {
+        height: 512px;
+    }
+    .balkony-door {
+        height: 598px;
+    }
+    .entrance-door img {
+        top: -5px;
+    }
+    .room-door img {
+        top: -15px;
+    }
+    .balkony-door img {
+        top: -35px;
+    }
+    .entrance-door .info {
+        top: 0;
+    }
+    .room-door .info {
+        top: -5px;
+    }
+    .balkony-door .info {
+        top: -25px;
+    }
+
+
+    .entrance-door img,
+    .balkony-door img,
+    .room-door img {
+        width: 335px;
+        height: 353px;
+        left: 20px;
+    }
+    .entrance-door .info,
+    .balkony-door .info,
+    .room-door .info {
+        left: 20px;
+        width: 335px;
+    }
+
+    .entrance-door h1,
+    .balkony-door h1,
+    .room-door h1 {
+        padding-bottom: 0;
+    }
+
+    .feedbacks {
+        width: 375px;
+        height: 1804px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+
+    .feedbacks .container {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .feedbacks p {
+        text-align: center;
+    }
+
+    .map,
+    .map_768 {
+        display: none;
+    }
+
+    .map_375 {
+        display: block;
+    }
+
+
+    .form-section {
+        width: 375px;
+        height: 655px;
+        margin-top: 5px;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+    }
+
+    .form-section form {
+        margin-top: 5px;
+        width: 375px;
+        height: 450px;
+        background: #FEFEFF;
+        margin-bottom: 300px;
+    }
+
+    .form {
+        width: 200px;
+        height: 526px;
+        padding-top: 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form h1 {
+        font-size: 22px;
+    }
+
+    .form-section input {
+        width: 200px;
+        margin: 5px 0;
+    }
+    .form-section .phone-number .tel {
+        width: 113px !important; 
+    }
+
+    footer {
+        width: 375px;
+        margin-top: 20px;
+        font-size: 10px; 
+    }
+
+    footer .text {
+        margin: 0;
+        
+    }
+
+    footer .container {
+        position: relative;
+        flex-direction: column;
+        height: 190px;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .partners .partners-block img {
+        width: 43.58px;
+        height: 23.08px;
+    } 
+    footer .links {
+        margin-right: 5px;
+    }
+    .partners {
+        margin-bottom: 10px;
+    }
+
+    footer .partners img {
+        margin: 3px 5px 0 0 ;
+    }
+    .big-img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .big-img img {
+        width: 40px;
+        height: 52px;
+        
+    }
+
+
+    footer .links p, footer .text p { 
+        font-size: 10px;
+        padding: 0;
+    }
+    
+    .feedbacks .Evgeniy {
+        max-width: 189px;
+        display: inline-block;
+        margin: 0 25px;
+        
+    }
+
+
+}

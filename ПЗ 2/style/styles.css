@@ -1,0 +1,119 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin: 75px 84px 85px;
+}
+a {
+  color: #408253;
+  text-decoration: none;
+}
+a:hover{
+  opacity: 0.5;
+}
+.imgheader{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav{
+font-weight: 700;
+font-size: 36px;
+line-height: 49px;
+color: #E5E5E5;
+}
+h1{
+margin-top: 75px;
+font-weight: 700;
+font-size: 64px;
+text-align: center;
+}
+.h21{
+text-align: center;
+margin-top: 87px;
+font-weight: 700;
+font-size: 48px;
+line-height: 65px;
+}
+.desc{
+    margin-top: 55px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+
+}
+.map{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px;
+  margin-bottom: 151px;
+}
+  section{
+  margin-bottom: 76px;
+  width: 1271px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  iframe
+  {
+    align-self: left;
+    border: none;
+  }
+  table {
+    height: 206px;
+    border-collapse: collapse; /* Отображать только одинарные линии */
+  }
+  h2{
+    text-align: left;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    margin-bottom: 17px;
+  }
+ 
+  thead {
+    background: #D9F0E0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+  }
+  tbody {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    background: #D9F0E0;
+  }
+  tfoot{
+    background: #408253;
+    font-size: 30px;
+    font-weight: 400;
+    color: #FFFFFF;
+  }
+  .sales{
+    font-style: italic;
+    font-weight: 600;
+    line-height: 41px;
+    text-align: left;
+    padding-left: 50px;
+  }
+  th,td{
+    border: 1px solid #408253;
+    width: 212px;
+    height: 103px;
+    text-align: center;
+  }
+  .clause{
+    font-weight: 300;
+    font-size: 24px;
+    margin-top: 9px;
+  }
+  footer{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: right;
+  }
+  tfoot td{
+    border:solid 1px white;
+  }

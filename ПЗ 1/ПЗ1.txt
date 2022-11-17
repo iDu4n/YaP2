@@ -1,0 +1,43 @@
+<!DOCTYPE HTML >
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="On this site you can find a student CV." />
+  <title>CV </title>
+  <link href="favicon.ico" rel="shortcut icon" type="..\favicon.ico" />
+ </head>
+ <body>
+  <h1 align="center"><strong>ROMANOVSKY NIKITA</strong></h1>
+  <h2 align="center">CV</h2>
+    <img src=".\фото.jpg" width="250" alt="фото" title="Фото студента Романовского Никиты Дмитриевича">
+    <p>A software engineer with experience in all levels of testing, including performance. functional, integration, system and user acceptance</p>
+	<p>A.Areas of expertise</p>
+    <ul>
+      <li>Hands-on SQL experience</li>
+	  <li>Java, PGP and Python experience</li>
+      <li>Microsoft ASP.NET MVC. Web API experience</li>
+	  <li>Working knowledge of C, C# and C++</li>
+	</ul>
+	<p>B.Other skills</p>
+	<ul>
+      <li>The ability to analyze complex technical information</li>
+	  <li>Can analyze, desigh and implement database structures</li>
+      <li>Detail oriented</li>
+	  <li>Excellent problem solver</li>
+	  <li>Good communication and interpersonal skills</li>
+	</ul>
+	<p>C.Academic background</p>
+	<ul>
+      <li>Bachelor is degree in Programmable Mobile Systems, sept. 2020 to June 2024</li>
+	  <li>Secondary school no. 11 in Orsha</li>   
+	</ul>
+	<p>D.Contact information</p>
+	<ul>
+      <li>Home: +56 86 13</li>
+	  <li>Cell: +375 29 811-43-03</li>
+      <li><a href="http://mail.ru/">nikitaromanovsky03@mail.ru</a></li>
+	</ul>
+	<a href="https://vk.com/id186262402"> Страница VK</a>
+ </body>
+</html>
