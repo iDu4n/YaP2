@@ -183,15 +183,17 @@ main {
 }
 
 .feedbacks .container {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .feedbacks .comment {
     overflow-x:hidden;
-    max-width: 189px;
-    display: inline-block;
+    width: 189px;
+
     margin: 0 25px;
 }
+
 
 
 .feedbacks h1 {
@@ -209,6 +211,7 @@ main {
 .feedbacks h2 {
     font: bold 16px Open-sans, sans-serif;
     margin: 5px 0 15px;
+    text-align: center;
 }
 
 .feedbacks p {
@@ -512,11 +515,6 @@ footer .partners img {
         flex-wrap: wrap;
     }
 
-    .feedbacks .comment {
-        display:flex;
-        height: 20px;
-        
-    }
 
 
 
