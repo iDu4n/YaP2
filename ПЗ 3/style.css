@@ -480,6 +480,10 @@ footer .partners img {
 
 @media (min-width: 760px) and (max-width: 1300px) {
 
+  .pc-content:not(.tablet-content),
+  .mobile-content:not(.tablet-content) {
+    display: none
+  }
     
   .secondary-text {
     font-size: 13px
@@ -553,6 +557,20 @@ footer .partners img {
     height: calc(100% + 200px);
   }
 
+  .tablet-circle-wrapper .secondary-text {
+      font-size: 24px;
+      line-height: 36px;
+  }
+
+  .tablet-circle-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEAE83;
+    padding: 30px;
+  }
+
   .content-img.entrance-doors
   {
     position: sticky;
@@ -570,8 +588,8 @@ footer .partners img {
   }
 
   .circle-block {
-    width: 98px;
-    height: 98px;
+    width: 180px;
+    height: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -695,6 +713,11 @@ form p {
 }
 
 @media screen and (max-width: 760px){
+
+  .pc-content:not(.mobile-content),
+  .tablet-content:not(.mobile-content) {
+    display: none
+  }
 
     body {
         margin: 0;
