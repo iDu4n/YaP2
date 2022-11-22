@@ -194,10 +194,11 @@ header {
     margin: 0 auto;
     text-align: right;
     height: 40px;
+    justify-content: right;
 }
 
 .header-nav a {
-    display: inline;
+    display: flex;
     text-decoration: none;
     font: normal 13px Open-sans, sans-serif;
     line-height: 40px;
