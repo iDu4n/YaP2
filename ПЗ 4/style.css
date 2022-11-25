@@ -17,6 +17,12 @@
     animation-play-state: running;
     animation-delay: 0s;
 }
+
+.one{
+    animation-delay: 0s;
+    background-color:rgb(2, 255, 2)
+}
+
 .two{
     animation-delay: 0.1s;
     background-color:rgb(2, 255, 2)
