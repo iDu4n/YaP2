@@ -1,4 +1,4 @@
-
+z
   * {
     margin: 0;
     padding: 0;
@@ -249,13 +249,16 @@ main {
     display: none;
 }
 
-
+.feedbacks {
+  width: 768px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
 
 
 .feedbacks, .form-section {
     background-color: #FEFEFE;
     width: 1240px;
-    height: 580px;
     margin: 100px auto;
 }
 
@@ -296,7 +299,6 @@ main {
     line-height: 21px;
     text-align: left;
     padding: 25px 0 25px;
-    height: 270px;
     border-top: 1px solid rgba(153, 152, 152, 0.4);
     border-bottom: 1px solid rgba(153, 152, 152, 0.4);
 }
@@ -915,7 +917,7 @@ form p {
     .feedbacks {
         overflow-y:scroll;
         width: 768px;
-        height: 974px;
+        min-height: 974px;
         margin-top: 20px;
         margin-bottom: 100px;
     }
