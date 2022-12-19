@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div id="container">
+        <div id="form_container">
+            <form method="POST" name="lab4" id="MyForm">
+                
+                        <ul style="margin-left: 44%;">
+                            <li>
+                                <label for="name_of_dish">Наименование блюда</label>
+                                <input type="text" pattern="[А- Яа-яЁё]" name="name_of_dish" id="name_of_dish" value="" tabindex="1" />
+                            </li>
+                            <li>
+                                <label for="quantity">Количество</label>
+                                <input type="number" name="quantity" id="quantity" value="" tabindex="2" />
+                            </li>
+                            <li>
+                                <label for="cost">Стоимость</label>
+                                <input type="number" name="cost" id="cost" value="" tabindex="3" />
+                            </li>
+                            <li>
+                                <button type="button" id="button" class="btn btn-success" name="subm" onClick="addDish()" value="Добавить" tabindex="4" /> Добавить </button>
+                            </li>
+                            <li>
+                                <input type="button" id="button" class="btn btn-warning" name="subm" value="Рассчитать стоимость" onClick="countCost()" tabindex="5" />
+                            </li>
+                            <li>
+                                <button id="button" class="btn btn-danger" name="subm" value="Очистить" onClick="delAll()" tabindex="6" /> Очистить </button>
+                            </li>
+                        </ul>
+                    
+            </form>
+        </div>
+        <div id="table_container">
+            <p style="text-align: center;">Общая стоимость</p>
+            <table id="dish_tab" class="table table-stripped">
+                <thead>
+                    <tr>
+                        <th>Наименование блюда</th>
+                        <th>Количество</th>
+                        <th>Стоимость</th>
+                    </tr>
+                </thead>
+                <tbody id="dish_body"></tbody>
+                <tfoot id="result"></tfoot>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var form = document.lab4;
+        var table = document.getElementById("dish_tab");
+        var tabbody = document.getElementById('dish_body');
+        var resForm = document.getElementById('result');
+
+        
+        function addDish () 
+        {
+            let nameDish = form.name_of_dish.value;
+            let quantity = form.quantity.value;
+            let cost = form.cost.value;
+
+
+            if (nameDish == "" || quantity == "" || cost == "")
+            {
+                alert("Вы не заполнили все поля");
+                return;
+            }
+            else if (cost < 0)
+            {
+                alert("Значение цены не может быть отрицательным");
+                return;
+            }
+            else if (quantity < 0)
+            {
+                alert("Значение количества не может быть отрицательным");
+                return;
+            }
+            else if (typeof(nameDish) != "string")
+            {
+                alert("Название блюда - это текст");
+                return;
+            }
+
+            let tbody = table.getElementsByTagName('tbody')[0];
+            let row = document.createElement("tr");
+                            
+            for (let i = tabbody.rows.length-1; i >= 0; i--)
+            {
+                let trows = tabbody.rows[i];
+                let parseQuantity = parseInt(trows.cells[1].innerHTML)
+                if (trows.cells[0].innerHTML == nameDish && trows.cells[2].innerHTML == cost) {
+                    parseQuantity = parseQuantity + parseInt(quantity);
+                    trows.cells[1].innerHTML = parseQuantity;
+                    return;
+                }
+            }
+
+            tbody.appendChild(row);
+
+            let td_name_dish = document.createElement("td");
+            let td_qantity = document.createElement("td");
+            let td_cost = document.createElement("td");
+
+            row.appendChild(td_name_dish);
+            row.appendChild(td_qantity);
+            row.appendChild(td_cost);
+
+            td_name_dish.appendChild(document.createTextNode(nameDish));
+            td_qantity.appendChild(document.createTextNode(quantity));
+            td_cost.appendChild(document.createTextNode(cost));
+
+            rowCount = table.rows.length;
+
+
+            return;
+
+        }
+
+        function delAll()
+        {
+            
+            let rowCount = tabbody.rows.length;
+            for (let i = rowCount-1; i >= 0; i--) {
+                tabbody.deleteRow(i);
+            }
+            resForm.innerHTML = '';
+            return;
+        }
+        
+        function countCost ()
+        {
+            let result = 0;
+            for (let i = 0; i < rowCount-1; i++)
+            {
+                let trows = tabbody.rows[i];
+                // console.log(trows.cells[2].innerHTML);
+                result = result + parseInt(trows.cells[2].innerHTML) * parseInt(trows.cells[1].innerHTML);
+            }
+            
+            resForm.innerHTML = '<th><th></th><th>Итого '+ result +'</th></tr>';
+            return;
+        }
+
+      </script>
+</body>
+</html>

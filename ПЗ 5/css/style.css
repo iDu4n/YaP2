@@ -1,0 +1,59 @@
+main {
+    min-height: 1000px;
+  }
+
+  .group_block {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .group_text {
+    color: #3a547f;
+    font-weight: 500;
+    font-size: 30px;
+    padding-left: 10px;
+    font-family: "Lora",serif;
+    text-align: center;
+  }
+
+  table {
+    height: 106px;
+    border-collapse: collapse; /* Отображать только одинарные линии */
+    margin-left: 10px;  
+    font-family: "Lora",serif;
+    font-variant: normal;
+    -webkit-font-feature-settings: normal;
+    font-feature-settings: normal;
+    width: 95%;
+  }
+
+ 
+  thead {
+    color: #3a547f;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+  }
+  tbody {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 41px;
+  }
+  tfoot{
+
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  th,td{
+    border: 1px solid black;
+    width: 33%;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 30px;
+  }
